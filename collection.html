@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 
 <head>
   <meta charset="UTF-8">
-  <title>Soul Eclipse - Limited black & white collection</title>
+  <title>Soul Eclipse - Лимитирана черно-бяла колекция</title>
   <meta name="description"
-    content="Browse the Soul Eclipse collection of unisex black & white t-shirts, hoodies and crewnecks with abstract, story-driven prints and limited pieces." />
-  <meta name="keywords" content="Soul Eclipse, about, story, mission, streetwear">
+    content="Разгледай колекцията на Soul Eclipse - унисекс черно-бели тениски, худита и суитчъри с абстрактни, story-driven принтове и лимитиран брой бройки." />
+  <meta name="keywords" content="Soul Eclipse, колекция, тениски, худита, суитчъри, streetwear">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,40 +20,44 @@
       </a>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="collection.html" class="active">Collection</a></li>
-          <li><a href="stories.html">Stories</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="about.html">За бранда</a></li>
+          <li><a href="collection.html" class="active">Колекция</a></li>
+          <li><a href="stories.html">Истории</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html">Галерия</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li class="nav-cart">
+            <a href="collection.html#cart">
+              Количка <span class="cart-count">0</span>
+            </a>
+          </li>
         </ul>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <button class="nav-toggle" aria-label="Отвори навигацията">☰</button>
     </div>
   </header>
 
   <main>
 
-
     <section class="page-hero">
       <div class="container">
-        <h1>Collection</h1>
+        <h1>Колекция</h1>
         <p>
-          Unisex black and white pieces built around three pillars: t shirts, hoodies and crewnecks.
-          Every design is abstract from up close and clear from a distance.
+          Унисекс черно-бели модели, изградени около три основни линии: тениски, худита и суитчъри.
+          Всеки дизайн е абстрактен отблизо и ясен от разстояние.
         </p>
       </div>
     </section>
 
     <section class="collection-filters">
       <div class="container">
-        <h2>Browse by category</h2>
+        <h2>Разгледай по категория</h2>
         <div class="filter-buttons">
-          <button class="btn btn-outline" data-filter="all">All</button>
-          <button class="btn btn-outline" data-filter="tee">T shirts</button>
-          <button class="btn btn-outline" data-filter="hoodie">Hoodies</button>
-          <button class="btn btn-outline" data-filter="crewneck">Crewnecks</button>
+          <button class="btn btn-outline" data-filter="all">Всички</button>
+          <button class="btn btn-outline" data-filter="tee">Тениски</button>
+          <button class="btn btn-outline" data-filter="hoodie">Худита</button>
+          <button class="btn btn-outline" data-filter="crewneck">Суитчъри</button>
         </div>
       </div>
     </section>
@@ -61,134 +65,164 @@
     <section class="collection-grid">
       <div class="container products-grid">
         <article class="product-card" data-category="tee">
-          <img src="img/gallery/t_shirt1.png" alt="Soul Eclipse tee front view" class="product-image">
+          <img src="img/gallery/t_shirt1.png" alt="Soul Eclipse тениска, изглед отпред" class="product-image">
           <h3>Soul Eclipse Tee</h3>
-          <p class="product-meta">Unisex t shirt · Black or white</p>
-          <p class="product-price">79 BGN</p>
-          <p class="product-tag">Limited · 50 pieces</p>
+          <p class="product-meta">Унисекс тениска · Черна или бяла</p>
+          <p class="product-price">79 лв.</p>
+          <p class="product-tag">Лимитирана · 50 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>
         </article>
 
         <article class="product-card" data-category="tee">
-          <img src="img/gallery/t_shirt2.png" alt="Broken Halo tee abstract print" class="product-image">
+          <img src="img/gallery/t_shirt2.png" alt="Broken Halo тениска с абстрактен принт" class="product-image">
           <h3>Broken Halo Tee</h3>
-          <p class="product-meta">Unisex t shirt · Black</p>
-          <p class="product-price">85 BGN</p>
-          <p class="product-tag">Limited · 40 pieces</p>
+          <p class="product-meta">Унисекс тениска · Черна</p>
+          <p class="product-price">85 лв.</p>
+          <p class="product-tag">Лимитирана · 40 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>        
         </article>
 
         <article class="product-card" data-category="tee">
-          <img src="img/gallery/t_shirt3.png" alt="Broken Halo tee abstract print" class="product-image">
+          <img src="img/gallery/t_shirt3.png" alt="Broken Halo тениска с абстрактен принт" class="product-image">
           <h3>Broken Halo Tee</h3>
-          <p class="product-meta">Unisex t shirt · Black</p>
-          <p class="product-price">85 BGN</p>
-          <p class="product-tag">Limited · 40 pieces</p>
+          <p class="product-meta">Унисекс тениска · Черна</p>
+          <p class="product-price">85 лв.</p>
+          <p class="product-tag">Лимитирана · 40 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>        
         </article>
 
         <article class="product-card" data-category="tee">
-          <img src="img/gallery/t_shirt4.png" alt="Broken Halo tee abstract print" class="product-image">
+          <img src="img/gallery/t_shirt4.png" alt="Broken Halo тениска с абстрактен принт" class="product-image">
           <h3>Broken Halo Tee</h3>
-          <p class="product-meta">Unisex t shirt · Black</p>
-          <p class="product-price">85 BGN</p>
-          <p class="product-tag">Limited · 40 pieces</p>
+          <p class="product-meta">Унисекс тениска · Черна</p>
+          <p class="product-price">85 лв.</p>
+          <p class="product-tag">Лимитирана · 40 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>        
         </article>
 
         <article class="product-card" data-category="hoodie">
-          <img src="img/gallery/hoodie2.png" alt="Broken Halo hoodie front" class="product-image">
+          <img src="img/gallery/hoodie2.png" alt="Broken Halo худи, изглед отпред" class="product-image">
           <h3>Broken Halo Hoodie</h3>
-          <p class="product-meta">Unisex hoodie with hood · Black</p>
-          <p class="product-price">119 BGN</p>
-          <p class="product-tag">Limited · 40 pieces</p>
+          <p class="product-meta">Унисекс худи с качулка · Черно</p>
+          <p class="product-price">119 лв.</p>
+          <p class="product-tag">Лимитирана · 40 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>        
         </article>
 
         <article class="product-card" data-category="hoodie">
-          <img src="img/gallery/hoodie1.png" alt="Eclipse Line hoodie minimal line art"
-            class="product-image">
+          <img src="img/gallery/hoodie1.png" alt="Eclipse Line худи с минималистична линия" class="product-image">
           <h3>Eclipse Line Hoodie</h3>
-          <p class="product-meta">Unisex hoodie · White</p>
-          <p class="product-price">115 BGN</p>
-          <p class="product-tag">Limited · 35 pieces</p>
+          <p class="product-meta">Унисекс худи · Бяло</p>
+          <p class="product-price">115 лв.</p>
+          <p class="product-tag">Лимитирана · 35 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>        
         </article>
 
         <article class="product-card" data-category="crewneck">
-          <img src="img/gallery/crewneck1.png" alt="Inner Orbit crewneck with dotted planet print"
-            class="product-image">
+          <img src="img/gallery/crewneck1.png" alt="Inner Orbit суитчър с принт планета от точки" class="product-image">
           <h3>Inner Orbit Crewneck</h3>
-          <p class="product-meta">Unisex crewneck · White</p>
-          <p class="product-price">109 BGN</p>
-          <p class="product-tag">Limited · 45 pieces</p>
+          <p class="product-meta">Унисекс суитчър · Бял</p>
+          <p class="product-price">109 лв.</p>
+          <p class="product-tag">Лимитирана · 45 броя</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>
         </article>
 
         <article class="product-card" data-category="crewneck">
-          <img src="img/gallery/crewneck2.png" alt="Shattered Light crewneck abstract light print"
+          <img src="img/gallery/crewneck2.png" alt="Shattered Light суитчър с абстрактен светлинен принт"
             class="product-image">
           <h3>Shattered Light Crewneck</h3>
-          <p class="product-meta">Unisex crewneck · Black</p>
-          <p class="product-price">112 BGN</p>
-          <p class="product-tag product-tag-soldout">Sold out</p>
+          <p class="product-meta">Унисекс суитчър · Черен</p>
+          <p class="product-price">112 лв.</p>
+          <p class="product-tag product-tag-soldout">Изчерпан</p>
+          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
+            data-price="79">
+            Добави в количката
+          </button>
         </article>
       </div>
     </section>
 
     <section class="collection-table">
       <div class="container">
-        <h2>Fit, sizes and pricing overview</h2>
+        <h2>Кройка, размери и цени</h2>
         <p>
-          All pieces are unisex with a relaxed streetwear fit. The table below shows a quick overview
-          of each product type, fit and price range.
+          Всички модели са унисекс с свободна streetwear линия. Таблицата показва бърз преглед
+          на всеки продукт, кройка и ценови диапазон.
         </p>
         <div class="table-wrapper">
           <table>
             <thead>
               <tr>
-                <th>Product name</th>
-                <th>Type</th>
-                <th>Fit</th>
-                <th>Sizes available</th>
-                <th>Price range</th>
+                <th>Име на продукта</th>
+                <th>Тип</th>
+                <th>Кройка</th>
+                <th>Налични размери</th>
+                <th>Цена</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Soul Eclipse Tee</td>
-                <td>T shirt</td>
-                <td>Relaxed unisex</td>
+                <td>Тениска</td>
+                <td>Свободна унисекс</td>
                 <td>S, M, L, XL</td>
-                <td>79 BGN</td>
+                <td>79 лв.</td>
               </tr>
               <tr>
                 <td>Broken Halo Tee</td>
-                <td>T shirt</td>
-                <td>Boxy unisex</td>
+                <td>Тениска</td>
+                <td>Boxy унисекс</td>
                 <td>S, M, L, XL</td>
-                <td>85 BGN</td>
+                <td>85 лв.</td>
               </tr>
               <tr>
                 <td>Broken Halo Hoodie</td>
-                <td>Hoodie</td>
-                <td>Oversized unisex</td>
+                <td>Худи</td>
+                <td>Oversized унисекс</td>
                 <td>S, M, L, XL</td>
-                <td>119 BGN</td>
+                <td>119 лв.</td>
               </tr>
               <tr>
                 <td>Eclipse Line Hoodie</td>
-                <td>Hoodie</td>
-                <td>Relaxed unisex</td>
+                <td>Худи</td>
+                <td>Свободна унисекс</td>
                 <td>S, M, L, XL</td>
-                <td>115 BGN</td>
+                <td>115 лв.</td>
               </tr>
               <tr>
                 <td>Inner Orbit Crewneck</td>
-                <td>Crewneck</td>
-                <td>Standard unisex</td>
+                <td>Суитчър</td>
+                <td>Стандартна унисекс</td>
                 <td>S, M, L, XL</td>
-                <td>109 BGN</td>
+                <td>109 лв.</td>
               </tr>
               <tr>
                 <td>Shattered Light Crewneck</td>
-                <td>Crewneck</td>
-                <td>Relaxed unisex</td>
+                <td>Суитчър</td>
+                <td>Свободна унисекс</td>
                 <td>S, M, L</td>
-                <td>112 BGN</td>
+                <td>112 лв.</td>
               </tr>
             </tbody>
           </table>
@@ -198,20 +232,19 @@
 
     <section class="collection-care">
       <div class="container">
-        <h2>Material and care</h2>
+        <h2>Материя и грижа</h2>
         <p>
-          All Soul Eclipse pieces are made from soft cotton blends chosen for daily wear.
-          Prints are created using high quality techniques to preserve the dotted detail and contrast.
+          Всички модели на Soul Eclipse са изработени от меки памучни смеси, подбрани за ежедневно носене.
+          Принтовете са направени с висококачествени техники, за да запазят детайла от точки и контраста.
         </p>
         <ul>
-          <li>Wash inside out at 30 degrees Celsius on a gentle cycle.</li>
-          <li>Do not bleach. Avoid strong chemicals and harsh detergents.</li>
-          <li>Line dry if possible. Avoid high heat in the dryer.</li>
-          <li>Iron inside out on low heat, never directly on the print.</li>
+          <li>Пере се обърнато наопаки на 30 °C, на щадяща програма.</li>
+          <li>Без избелване. Избягвай силни препарати и агресивни химикали.</li>
+          <li>Суши се най-добре на въздух. Избягвай висока температура в сушилня.</li>
+          <li>Глади се наопаки на ниска температура, без да се минава директно върху принта.</li>
         </ul>
       </div>
     </section>
-
 
   </main>
 
@@ -219,22 +252,22 @@
     <div class="container footer-inner">
       <div class="footer-col">
         <h3>Soul Eclipse</h3>
-        <p>Unisex black & white streetwear. Limited drops, real stories.</p>
+        <p>Унисекс черно-бяло streetwear. Лимитирани дропове, истински истории.</p>
       </div>
       <div class="footer-col">
-        <h4>Navigation</h4>
+        <h4>Навигация</h4>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="collection.html">Collection</a></li>
-          <li><a href="stories.html">Stories</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="about.html">За бранда</a></li>
+          <li><a href="collection.html">Колекция</a></li>
+          <li><a href="stories.html">Истории</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html">Галерия</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Follow us</h4>
+        <h4>Последвай ни</h4>
         <ul class="social-links">
           <li><a href="#" aria-label="Instagram">Instagram</a></li>
           <li><a href="#" aria-label="TikTok">TikTok</a></li>
@@ -243,11 +276,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Soul Eclipse. All rights reserved.</p>
+      <p>&copy; 2025 Soul Eclipse. Всички права запазени.</p>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top">▲</button>
+  <button class="back-to-top" aria-label="Към началото">▲</button>
 
   <script src="js/main.js"></script>
 </body>

@@ -8,6 +8,7 @@ if (navToggle && mainNav) {
   });
 }
 
+
 // Back to top button
 const backToTopBtn = document.querySelector(".back-to-top");
 
@@ -24,5 +25,32 @@ window.addEventListener("scroll", () => {
 if (backToTopBtn) {
   backToTopBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+
+// Collection filters
+const filterButtons = document.querySelectorAll(".filter-buttons .btn");
+const productCards = document.querySelectorAll(".collection-grid .product-card");
+
+if (filterButtons.length && productCards.length) {
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+
+      //визуално активен бутон
+      filterButtons.forEach(b => b.classList.remove("active-filter"));
+      btn.classList.add("active-filter");
+
+      productCards.forEach((card) => {
+        const category = card.dataset.category;
+
+        if (filter === "all" || category === filter) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
   });
 }
