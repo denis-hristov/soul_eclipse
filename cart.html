@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Soul Eclipse - Количка</title>
+  <meta name="description" content="Количка за пазаруване на Soul Eclipse - виж артикулите, които си избрал.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Soul Eclipse</span>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="about.html">За бранда</a></li>
+          <li><a href="collection.html">Колекция</a></li>
+          <li><a href="stories.html">Истории</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html">Галерия</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li class="nav-cart">
+            <a href="cart.html" class="active">
+              Количка <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Отвори навигацията">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Количка</h1>
+        <p>Тук виждаш демо количката за курсовия проект. Няма реални поръчки.</p>
+      </div>
+    </section>
+
+    <section id="cart" class="cart-section">
+      <div class="container">
+        <h2>Твоите артикули</h2>
+        <p class="cart-note">
+          Можеш да променяш броя или да махаш продукти. Сумата се обновява автоматично.
+        </p>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-summary">
+          <p>Общо: <span id="cart-total">0.00</span> лв.</p>
+          <button class="btn btn-outline" id="cart-clear">Изчисти количката</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" aria-label="Към началото">↑</button>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h3>Soul Eclipse</h3>
+        <p>Унисекс черно-бяло streetwear. Лимитирани дропове, истински истории.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Навигация</h4>
+        <ul>
+          <li><a href="index.html">Начало</a></li>
+          <li><a href="about.html">За бранда</a></li>
+          <li><a href="collection.html">Колекция</a></li>
+          <li><a href="stories.html">Истории</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html">Галерия</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="cart.html">Количка</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Последвай ни</h4>
+        <ul class="social-links">
+          <li><a href="#" aria-label="Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="TikTok">TikTok</a></li>
+          <li><a href="#" aria-label="Threads">Threads</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Soul Eclipse. Всички права запазени.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

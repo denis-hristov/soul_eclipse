@@ -28,7 +28,7 @@
           <li><a href="gallery.html">Галерия</a></li>
           <li><a href="contacts.html">Контакти</a></li>
           <li class="nav-cart">
-            <a href="collection.html#cart">
+            <a href="cart.html">
               Количка <span class="cart-count">0</span>
             </a>
           </li>
@@ -37,6 +37,7 @@
       <button class="nav-toggle" aria-label="Отвори навигацията">☰</button>
     </div>
   </header>
+
 
   <main>
 
@@ -47,18 +48,6 @@
           Унисекс черно-бели модели, изградени около три основни линии: тениски, худита и суитчъри.
           Всеки дизайн е абстрактен отблизо и ясен от разстояние.
         </p>
-      </div>
-    </section>
-
-    <section class="collection-filters">
-      <div class="container">
-        <h2>Разгледай по категория</h2>
-        <div class="filter-buttons">
-          <button class="btn btn-outline" data-filter="all">Всички</button>
-          <button class="btn btn-outline" data-filter="tee">Тениски</button>
-          <button class="btn btn-outline" data-filter="hoodie">Худита</button>
-          <button class="btn btn-outline" data-filter="crewneck">Суитчъри</button>
-        </div>
       </div>
     </section>
 
@@ -82,10 +71,10 @@
           <p class="product-meta">Унисекс тениска · Черна</p>
           <p class="product-price">85 лв.</p>
           <p class="product-tag">Лимитирана · 40 броя</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
+          <button class="btn btn-primary add-to-cart" data-id="tee-broken-halo-1" data-name="Broken Halo Tee"
+            data-price="85">
             Добави в количката
-          </button>        
+          </button>
         </article>
 
         <article class="product-card" data-category="tee">
@@ -94,10 +83,10 @@
           <p class="product-meta">Унисекс тениска · Черна</p>
           <p class="product-price">85 лв.</p>
           <p class="product-tag">Лимитирана · 40 броя</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
+          <button class="btn btn-primary add-to-cart" data-id="tee-broken-halo-2" data-name="Broken Halo Tee"
+            data-price="85">
             Добави в количката
-          </button>        
+          </button>
         </article>
 
         <article class="product-card" data-category="tee">
@@ -106,10 +95,10 @@
           <p class="product-meta">Унисекс тениска · Черна</p>
           <p class="product-price">85 лв.</p>
           <p class="product-tag">Лимитирана · 40 броя</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
+          <button class="btn btn-primary add-to-cart" data-id="tee-broken-halo-3" data-name="Broken Halo Tee"
+            data-price="85">
             Добави в количката
-          </button>        
+          </button>
         </article>
 
         <article class="product-card" data-category="hoodie">
@@ -118,10 +107,10 @@
           <p class="product-meta">Унисекс худи с качулка · Черно</p>
           <p class="product-price">119 лв.</p>
           <p class="product-tag">Лимитирана · 40 броя</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
+          <button class="btn btn-primary add-to-cart" data-id="hoodie-broken-halo" data-name="Broken Halo Hoodie"
+            data-price="119">
             Добави в количката
-          </button>        
+          </button>
         </article>
 
         <article class="product-card" data-category="hoodie">
@@ -130,10 +119,10 @@
           <p class="product-meta">Унисекс худи · Бяло</p>
           <p class="product-price">115 лв.</p>
           <p class="product-tag">Лимитирана · 35 броя</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
+          <button class="btn btn-primary add-to-cart" data-id="hoodie-eclipse-line" data-name="Eclipse Line Hoodie"
+            data-price="115">
             Добави в количката
-          </button>        
+          </button>
         </article>
 
         <article class="product-card" data-category="crewneck">
@@ -142,8 +131,8 @@
           <p class="product-meta">Унисекс суитчър · Бял</p>
           <p class="product-price">109 лв.</p>
           <p class="product-tag">Лимитирана · 45 броя</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
+          <button class="btn btn-primary add-to-cart" data-id="crew-inner-orbit" data-name="Inner Orbit Crewneck"
+            data-price="109">
             Добави в количката
           </button>
         </article>
@@ -155,13 +144,14 @@
           <p class="product-meta">Унисекс суитчър · Черен</p>
           <p class="product-price">112 лв.</p>
           <p class="product-tag product-tag-soldout">Изчерпан</p>
-          <button class="btn btn-primary add-to-cart" data-id="tee-soul-eclipse" data-name="Soul Eclipse Tee"
-            data-price="79">
-            Добави в количката
+          <!-- по избор: или без бутон, или disabled -->
+          <button class="btn btn-primary" disabled>
+            Изчерпан
           </button>
         </article>
       </div>
     </section>
+
 
     <section class="collection-table">
       <div class="container">
@@ -264,6 +254,7 @@
           <li><a href="news.html">Новини</a></li>
           <li><a href="gallery.html">Галерия</a></li>
           <li><a href="contacts.html">Контакти</a></li>
+          <li><a href="cart.html">Количка</a></li>
         </ul>
       </div>
       <div class="footer-col">
