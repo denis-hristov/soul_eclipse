@@ -9,6 +9,8 @@ if (navToggle && mainNav) {
 }
 
 
+
+
 // Back to top button
 const backToTopBtn = document.querySelector(".back-to-top");
 
@@ -29,48 +31,19 @@ if (backToTopBtn) {
 }
 
 
-// Collection filters
-const filterButtons = document.querySelectorAll(".filter-buttons .btn");
-const productCards = document.querySelectorAll(".collection-grid .product-card");
-
-if (filterButtons.length && productCards.length) {
-  filterButtons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const filter = btn.dataset.filter;
-
-      //визуално активен бутон
-      filterButtons.forEach(b => b.classList.remove("active-filter"));
-      btn.classList.add("active-filter");
-
-      productCards.forEach((card) => {
-        const category = card.dataset.category;
-
-        if (filter === "all" || category === filter) {
-          card.style.display = "";
-        } else {
-          card.style.display = "none";
-        }
-      });
-    });
-  });
-}
 
 
 
-
-
-
-
-
+// collection filter
 document.addEventListener("DOMContentLoaded", () => {
-  // COLLECTION FILTERS
+
   const filterButtons = document.querySelectorAll(".filter-buttons .btn");
   const productCards = document.querySelectorAll(".collection-grid .product-card");
 
   if (filterButtons.length && productCards.length) {
     filterButtons.forEach((btn) => {
       btn.addEventListener("click", () => {
-        const filter = btn.dataset.filter; // all, tee, hoodie, crewneck
+        const filter = btn.dataset.filter;
 
         filterButtons.forEach((b) => b.classList.remove("active-filter"));
         btn.classList.add("active-filter");
@@ -87,7 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // CART
+
+
+
+  // cart
   const CART_KEY = "soulEclipseCart";
   let cart = [];
 
@@ -103,9 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function saveCart() {
     try {
       localStorage.setItem(CART_KEY, JSON.stringify(cart));
-    } catch (error) {
-      // ignore
-    }
+    } catch (error) {}
   }
 
   function getCartItemCount() {
@@ -121,12 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const cartTotalEl = document.querySelector("#cart-total");
     const cartCountEl = document.querySelector(".cart-count");
 
-    // update counter в навигацията
     if (cartCountEl) {
       cartCountEl.textContent = getCartItemCount();
     }
 
-    // ако няма cart секция (друга страница) – само брояча горе
     if (!cartContainer || !cartTotalEl) {
       return;
     }
@@ -143,16 +115,16 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="cart-item">
           <div>
             <p class="cart-item-name">${item.name}</p>
-            <p class="cart-item-meta">${item.price.toFixed(2)} BGN × ${item.quantity}</p>
+            <p class="cart-item-meta">${item.price.toFixed(2)} BGN x ${item.quantity}</p>
           </div>
           <div class="cart-item-actions">
-            <button class="cart-btn" data-action="minus" data-id="${item.id}">−</button>
+            <button class="cart-btn" data-action="minus" data-id="${item.id}">-</button>
             <span class="cart-item-qty">${item.quantity}</span>
             <button class="cart-btn" data-action="plus" data-id="${item.id}">+</button>
-            <button class="cart-btn cart-remove" data-action="remove" data-id="${item.id}">×</button>
+            <button class="cart-btn cart-remove" data-action="remove" data-id="${item.id}">x</button>
           </div>
         </div>
-      `
+        `
       )
       .join("");
 
@@ -189,11 +161,9 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCart();
   }
 
-  // init cart
   loadCart();
   renderCart();
 
-  // add-to-cart бутони
   const addToCartButtons = document.querySelectorAll(".add-to-cart");
   addToCartButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -207,7 +177,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // кликове в количката
   const cartItemsContainer = document.querySelector("#cart-items");
   if (cartItemsContainer) {
     cartItemsContainer.addEventListener("click", (event) => {
@@ -219,7 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // бутон за изчистване
   const clearCartBtn = document.querySelector("#cart-clear");
   if (clearCartBtn) {
     clearCartBtn.addEventListener("click", () => {
@@ -230,3 +198,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+
+
+// contacts form
+document.addEventListener("DOMContentLoaded", () => {
+
+  const contactForm = document.querySelector(".contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      console.log("Име:", name);
+      console.log("Имейл:", email);
+      console.log("Съобщение:", message);
+
+      alert("Благодарим ти за съобщението! Ще се свържем с теб скоро.");
+      contactForm.reset();
+    });
+  }
+});

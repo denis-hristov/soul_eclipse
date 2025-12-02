@@ -1,0 +1,40 @@
+.site-footer {
+  border-top: 1px solid #151515;
+  background: #050505;
+  padding-top: 2.5rem;
+  margin-top: 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 0.6rem;
+}
+
+.footer-col p,
+.footer-col ul {
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.3rem;
+}
+
+.social-links li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid #151515;
+  padding: 0.8rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #888;
+}
